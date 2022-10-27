@@ -1,1 +1,355 @@
-Hello world !
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+    <header>
+    <nav class="navbar">
+        <div id="current">
+        HOME
+        </div>
+        <div id="title">Gerbault Cédric</div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class = "active" ><a  href="#home">Home</a></li>
+                <li class = ""><a  href="#about">About</a></li>
+                <li class = ""><a  href="#skills">Skills</a></li>
+                <li class = ""><a  href="#experiences">Experiences</a></li>
+                <li class = ""><a  href="#portfolio">Portfolio</a></li>
+                <li class = ""><a  href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+    </header>
+
+
+<div class="background"></div>
+
+<section class="home_bloc">
+    <a class="anchor" id="home" href=""></a>
+    <h2>Hello World!</h2>
+    <p>je m'appelle Cédric, Développeur web et web mobile full stack spécialisé symfony</p>
+    <p>A la recherche d'un cdi sur Clermont-ferrand, disponible dés novembre 2022 </p>
+    <div>
+        <button class="btn contact"><a href="#contact">Contact</a></button>
+        <button class="btn dll">Mon CV</button>
+    </div>
+</section>
+
+
+<section class="backcard">
+    <a class="anchor" id="about" href=""></a>
+        <div class="card_title">
+            <img class="card_title--icon" src="images/icons/about.svg" alt="">
+            <h2 class="card_title--text">About me</h2>
+        </div>
+    <div class="about_bloc">
+
+        <p id="perso">Gerbault Cédric, 31 ans, Clermont-ferrand, permis B, A</p>
+        <hr>
+        <img class="profilepic" src="images/profilepic.jpg" alt="" >
+        <p id="about_text">Passioné par les Sciences et l'informatique depuis toujours, je me suis engagé pendant 6 mois
+            dans une formation de développeur web a l'ecole O'clock, afin de me reconvertir dans ce domaine qui me
+            passionne. Volontaire enthousiaste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam
+            quod voluptatum reprehenderit dolorem officiis, nam ipsam non nihil modi, ab doloremque soluta molestiae
+            magnam autem odit. Unde, porro odio.</p>
+    </div>
+</section>
+
+
+<section class="backcard">
+    <a class="anchor" id="skills" href=""></a>
+            <div class="card_title">
+                <img class="card_title--icon" src="images/icons/skills.svg" alt="">
+                <h2 class="card_title--text">HardSkills</h2>
+            </div>
+        <hr>
+        <div class="hardskill_bloc">
+
+            <div class ="skill_bloc">
+                <div class="card_subtitle">
+                    <img class="card_subtitle--icon" src="'images/icons/code.svg" alt="">
+                    <h2 class="card_subtitle--text--odd">FrontEnd</h2>
+                </div>
+                <div class="flexwrapper">
+                    <div class="icon">
+                        <img src="images/icons/html5.svg" alt="">
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icons/javascript.svg" alt="">
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icons/css3.svg" alt="">
+                        <h3>CSS3</h3>
+                    </div>
+
+                    <div class="icon">
+                        <img src="images/icons/bootstrap.svg" alt="">
+                        <h3>BOOTSTRAP</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="skill_bloc">
+                <div class="card_subtitle">
+                    <img class="card_subtitle--icon" src="images/icons/database.svg" alt="">
+                    <h2 class="card_subtitle--text--even">Backend</h2>
+                </div>
+                <div class="flexwrapper">
+                    <div class="icon">
+                        <img src="images/icons/php.svg" alt="">
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icons/symfony.svg" alt="">
+                        <h3>SYMFONY</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icons/laravel.svg" alt="">
+                        <h3>LARAVEL</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icons/csharp.svg" alt="">
+                        <h3>C#</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="skill_bloc">
+                <div class="card_subtitle">
+                    <img class="card_subtitle--icon" src="images/icons/tools.svg" alt="">
+                    <h2 class="card_subtitle--text--odd">Utilities</h2>
+                </div>
+                <div class="flexwrapper">
+                    <div class="icon">
+                        <img src="images/icons/visual-studio-code.svg" alt="">
+                        <h3>VS CODE</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icons/github.svg" alt="">
+                        <h3>GITHUB</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icons/adobe-photoshop.svg" alt="">
+                        <h3>PHOTOSHOP</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="'images/icons/mysql.svg" alt="">
+                        <h3>MYSQL</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card_title">
+            <img class="card_title--icon" src="images/icons/team.svg" alt="">
+            <h2 class="card_title--text">SoftSkills</h2>
+        </div>
+        <hr>
+        <div class="softskill_bloc">
+
+            <ul class="softlist">
+                <li>-Travail en équipe.</li>
+                <li>-Management.</li>
+                <li>-Empathie.</li>
+                <li>-Résolution de problèmes.</li>
+                <li>-Flexibilité.</li>
+                <li>-Bon niveau en Anglais</li>
+            </ul>
+        </div>
+
+         <div class="card_title">
+            <img class="card_title--icon" src="images/icons/music.svg" alt="">
+            <h2 class="card_title--text">Hobbies</h2>
+        </div>
+        <hr>
+        <div class="hobbies_bloc">
+        
+            <div class="flexwrapper">
+                <div class="icon">
+                    <img src="images/icons/php.svg" alt="">
+                    <h3>Jeux Videos</h3>
+                </div>
+                <div class="icon">
+                    <img src="images/icons/symfony.svg" alt="">
+                    <h3>Randonnées</h3>
+                </div>
+                <div class="icon">
+                    <img src="images/icons/laravel.svg" alt="">
+                    <h3>Cinéma</h3>
+                </div>
+                <div class="icon">
+                    <img src="images/icons/csharp.svg" alt="">
+                    <h3>Moto</h3>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<section class="backcard">
+    <a class="anchor" id="experiences" href=""></a>
+    <div class="past_list">
+
+        <div class="card_title">
+            <img class="card_title--icon" src="images/icons/timeline.svg" alt="">
+            <h2 class="card_title--text">Parcours</h2>
+        </div>
+        <hr>
+        <ul id="experiences_list">
+            <li>
+                <span></span>
+                <div class="experiences_list--title">Second de rayon chez Grand Frais</div>
+                <div class="experiences_list--info">L'experience en tant que Second du Chef de rayon m'aura mis
+                    régulierement a la tête d'une petite equipe, et de la gestion des commandes du magasin affinant mes
+                    capacité de Management et de résolution de problèmes.</div>
+                <div class="experiences_list--time">
+                    <span>En fonction</span>
+                    <span>Décembre 2020</span>
+                </div>
+            </li>
+            <li>
+                <span></span>
+                <div class="experiences_list--title">Vendeur Gondolier chez Grand Frais</div>
+                <div class="experiences_list--info">L'experience chez Grand Frais comme vendeur m'on appris a étre tres
+                    resistant face a la pression et encore plus flexible face aux divers problemes d'approvisionement et
+                    un magasin en perpetuel changement.</div>
+                <div class="experiences_list--time">
+                    <span>Décembre 2020</span>
+                    <span>Avril 2019</span>
+                </div>
+            </li>
+            <li>
+                <span></span>
+                <div class="experiences_list--title">Employé de rayon chez Boulanger</div>
+                <div class="experiences_list--info">6 mois comme employé de rayons/stock m'auront aidé a affiné la
+                    gestion de mon temps et ma relation avec les client.</div>
+                <div class="experiences_list--time">
+                    <span>Mai 2017</span>
+                    <span>Novembre 2016</span>
+                </div>
+            </li>
+            <li>
+                <span></span>
+                <div class="experiences_list--title">Equipier/Formateur chez Mcdonald</div>
+                <div class="experiences_list--info">5 ans dont 2 en tant que formateur m'auront offert de solides bases
+                    en Travail en équipe, en Empathie ainsi qu'en pedagogie et en Flexibilité, la restauration rapide
+                    etant un domaine ou on ne sait jamais de quoi la journée sera faite.</div>
+                <div class="experiences_list--time">
+                    <span>Juillet 2016</span>
+                    <span>Octobre 2011</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="studies_list">
+
+        <div class="card_title">
+            <img class="card_title--icon" src="images/icons/book.svg" alt="">
+            <h2 class="card_title--text">Studies</h2>
+        </div>
+        <hr>
+        <ul id="experiences_list">
+            <li>
+                <span></span>
+                <div class="experiences_list--title">Titre Professionel Devellopeur Web et Web Mobile chez O'Clock</div>
+                <div class="experiences_list--info"></div>
+                <div class="experiences_list--time">
+                    <span>En cours</span>
+                    <span>Mai 2022</span>
+                </div>
+            </li>
+            <li>
+                <span></span>
+                <div class="experiences_list--title">License biologie</div>
+                <div class="experiences_list--info"></div>
+                <div class="experiences_list--time">
+                    <span>2011</span>
+                    <span>2009</span>
+                </div>
+            </li>
+            <li>
+                <span></span>
+                <div class="experiences_list--title">Bac S</div>
+                <div class="experiences_list--info"></div>
+                <div class="experiences_list--time">
+                    <span>2009</span>
+                    <span></span>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+
+
+<section class="backcard portfolio_bloc">
+    <a class="anchor" id="portfolio" href=""></a>
+    <div class="card_title">
+        <img class="card_title--icon" src="images/icons/folder.svg" alt="">
+        <h2 class="card_title--text">Portfolio</h2>
+    </div>
+    <hr>
+    <img src="images/icons/wip.jpeg" alt="">
+</section>
+
+
+<section class="backcard contact_bloc">
+    <a class="anchor" id="contact" href=""></a>
+    <div class="card_title">
+        <img class="card_title--icon" src="images/icons/info.svg" alt="">
+        <h2 class="card_title--text">Contactez-moi !</h2>
+    </div>
+    <hr>
+    <div class="contact_part">
+        <img src="images/icons/linkedin.svg" alt=""> <a
+            href="www.linkedin.com/in/cédric-gerbault-99b525121">Cédric Gerbault</a>
+    </div>
+    <div class="contact_part">
+        <img src="images/icons/github_2.svg" alt=""><a
+            href="https://github.com/Cedric-Gerbault">Cedric-Gerbault</a>
+    </div>
+    <div class="contact_part">
+        <img src="images/icons/gmail.svg" alt="">
+        <p class="contact_part--email">cdgerbault@gmail.com</p>
+    </div>
+    <div class="contact_part">
+        <img src="images/icons/phone.svg" alt="">
+        <p class="contact_part--phone">06.59.60.41.28</p>
+    </div>
+
+
+</section>
+<footer>
+    <p>Cédric GERBAULT &#169 2022</p>
+
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
