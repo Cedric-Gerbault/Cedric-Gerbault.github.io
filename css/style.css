@@ -16,9 +16,10 @@ body{
 }
 
 .background{
-   height: 150%;
-   width: 150%;
+   height: 100%;
+   width: 100%;
    position: fixed;
+   
    background:url(../images/bg.jpg) no-repeat center;
    background-size: cover;
    z-index: -1;

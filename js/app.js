@@ -9,6 +9,7 @@ var parallax = document.querySelectorAll(".background"),
 speed = 0.05;
 
 function init(){
+  parallax.style.backgroundPosition = "50% - 0px"
   navLi.forEach(
     (li) =>{
       li.addEventListener("click",onClickMenuLink);
