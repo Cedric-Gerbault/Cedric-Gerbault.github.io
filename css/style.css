@@ -16,19 +16,26 @@ body{
 }
 
 .background{
-   height: 130%;
-   width: 130%;
+   height: 150%;
+   width: 150%;
    position: fixed;
    background:url(../images/bg.jpg) no-repeat center;
    background-size: cover;
-   animation-name: backgroundzoom;
-   animation-duration: 8s;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-   animation-timing-function: ease-in-out;
-   background-clip: content-box;
    z-index: -1;
+   background-clip: content-box;
+
    
+}
+@media(min-width: 375px){
+   .background{
+      animation-name: backgroundzoom;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      
+      
+   }
 }
 .backcard{
    position: relative;
