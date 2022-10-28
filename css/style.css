@@ -16,8 +16,8 @@ body{
 }
 
 .background{
-   height: 120%;
-   width: 120%;
+   height: 130%;
+   width: 130%;
    position: fixed;
    background:url(../images/bg.jpeg) no-repeat center;
    background-size: cover;
@@ -261,7 +261,7 @@ header{
 /* About */
 .about_bloc{
    font-size: 2em;
-   min-height:max-content ;
+   min-height:8em;
 }
 .profilepic{
    float: left;
@@ -461,7 +461,8 @@ width: 9em;
    font-size: 2em;
 }
 .portfolio_bloc>img{
-   width:fit-content;
+   width:100%;
+   height: auto;
 }
 /* Contact */
 
