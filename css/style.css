@@ -26,7 +26,7 @@ body{
 
    
 }
-@media(min-width: 375px){
+@media(min-width: 425px){
    .background{
       animation-name: backgroundzoom;
       animation-duration: 8s;
