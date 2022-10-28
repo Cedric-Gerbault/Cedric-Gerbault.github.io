@@ -27,6 +27,7 @@ function init(){
 
 
 window.onscroll = () => {
+  if (window.matchMedia("(min-width: 425px)").matches) {
   var current = "";
 
 //   bloc parallax
@@ -38,14 +39,14 @@ window.onscroll = () => {
     el.style.backgroundPosition = elBackgrounPos;
 
   });
-
+  }
 //bloc nav
   sections.forEach((a) => {
     const sectionTop = a.offsetParent.offsetTop;
     if (scrollY >= sectionTop - 100) {
       current = a.getAttribute("id"); 
       navLi.forEach((li)=>{
-        console.log(li);
+        
         if(li.innerHTML.includes(current)){
           li.classList.add("active")
         }
