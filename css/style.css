@@ -18,6 +18,7 @@ body{
 .background{
    height: 100%;
    width: 100%;
+   
    position: fixed;
    background:url(../images/bg.jpg) no-repeat center;
    background-size: cover;

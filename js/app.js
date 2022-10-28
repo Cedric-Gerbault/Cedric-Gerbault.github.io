@@ -4,9 +4,7 @@ const navLi = document.querySelectorAll(".menu li");
 const toggle = document.getElementById("menu-toggle");
 const navCurrent = document.getElementById('current');
 const dateSpans = document.querySelectorAll(".experiences_list--time span")
-// parallax variables
-var parallax = document.querySelectorAll(".background"),
-speed = 0.01;
+
 
 function init(){
   
@@ -28,19 +26,7 @@ function init(){
 
 
 window.onscroll = () => {
-  if (window.matchMedia("(min-width: 425px)").matches) {
-  var current = "";
 
-//   bloc parallax
-  [].slice.call(parallax).forEach(function(el){
-  
-    var scrollY = window.scrollY,
-        elBackgrounPos = "50% -" + (scrollY * speed) + "px";
-
-    el.style.backgroundPosition = elBackgrounPos;
-
-  });
-  }
 //bloc nav
   sections.forEach((a) => {
     const sectionTop = a.offsetParent.offsetTop;
@@ -74,7 +60,7 @@ toggle.checked = false;
 
 };
 
-this.init();
+init();
 
 
 
