@@ -293,6 +293,13 @@ header{
    text-align: center;
    font-size: 0.5em;
 }
+@media(max-width: 425px){
+   .flexwrapper{
+      flex-grow: 2;
+      flex-wrap: wrap;
+   }
+
+}
 @media(min-width:1000px){
    .icon{
        width: 8em;
@@ -338,7 +345,10 @@ padding-left: 0.3em;
 .softlist{
    font-size: 0.93em;
    line-height: 1.25em;
+   text-align: center;
+
 }
+
 .hobbies_bloc{
    font-size: 2em;
    margin-top: 0.5em;
