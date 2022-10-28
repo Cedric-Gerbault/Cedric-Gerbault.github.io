@@ -6,10 +6,10 @@ const navCurrent = document.getElementById('current');
 const dateSpans = document.querySelectorAll(".experiences_list--time span")
 // parallax variables
 var parallax = document.querySelectorAll(".background"),
-speed = 0.05;
+speed = 0.01;
 
 function init(){
-  parallax.style.backgroundPosition = "50% - 0px"
+  
   navLi.forEach(
     (li) =>{
       li.addEventListener("click",onClickMenuLink);
@@ -18,7 +18,7 @@ function init(){
   );
   
   dateSpans.forEach((span)=>{
-    console.log(span)
+    
     leftCalc = -45 - span.offsetWidth;
     span.style.left = leftCalc +"px";
   }
