@@ -19,7 +19,7 @@ body{
    height: 130%;
    width: 130%;
    position: fixed;
-   background:url(../images/bg.jpeg) no-repeat center;
+   background:url(../images/bg.jpg) no-repeat center;
    background-size: cover;
    animation-name: backgroundzoom;
    animation-duration: 8s;
